@@ -1,0 +1,58 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	position: relative;
+}
+
+.all_area {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.abs{
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: #6a6a6a99;
+}
+
+.abs.area{
+	padding: 40px;
+	background-color: #fff;
+	border-radius: 20px;
+}
+
+.area {
+	width: 600px;
+	padding: 40px;
+	background-color: rgb(165, 208, 232);
+	border-radius: 20px;
+}
+
+h1 {
+	padding-bottom: 20px;
+}
+
+table {
+	text-align: left;
+}
+
+th {
+	border-left: 2px black solid;
+	padding: 5px 70px 5px 5px;
+}
+
+td {
+	padding: 5px;
+}
+
+.hovers:hover {
+	color: white;
+	cursor: pointer;
+}

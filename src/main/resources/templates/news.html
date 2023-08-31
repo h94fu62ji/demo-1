@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>NewsPage</title>
+<link rel="stylesheet" th:href="@{/css/news.css}" />
+</head>
+<body>
+	<div class="all_area">
+		<div class="area">
+			<h1>最新消息</h1>
+			<table>
+				<tr>
+					<th th:text="標題"></th>
+					<th th:text="時間"></th>
+					<th th:text="內文" style="padding-right: 0;"></th>
+				</tr>
+				<tr class="hovers" th:each="i:${news}" th:onclick="@{/process}">
+					<td th:text="${i.getTitle}"></td>
+					<td th:text="${i.getDate}"></td>
+					<td th:text="${i.getText}"></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<div th:if="true" class="all_area abs">
+		<div class="area" style="background-color: white;">
+			<h1>標題</h1>
+		</div>
+	</div>
+</body>
+</html>
